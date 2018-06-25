@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="ROBOTS" content="NOINDEX, FOLLOW">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Hot dogs == sandwiches ?</title>
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+    <script src="jquery.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="myStyle.css">
+    <link rel="stylesheet" href="./fonts/stylesheet.css">
+  </head>
+  <body>
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <input id="moneyInput" type="text" name="" value="" >
+        <span class="close">&times;</span>
+      </div>
+
+    </div>
+
+
+    <header>
+      Cards
+    </header>
+
+
+    <!-- Child -->
+
+    <ul id="list"></ul>
+
+    <ul id="cardList" class="cardList">
+      <h1>Cards</h1>
+      <h5 id="currentUser"></h5>
+      <div id="001"class="cardListBox">
+        <div id="cardTitle" class="cardTitle">
+          <h1 id="cardBrand" class=""></h1>
+          <h2 id="cardNumber" class=""></h2>
+          <span id="moneyLeft" class="moneyLeft"></span>
+        </div>
+        <div class="details">
+          <ul id="innerListCard"></ul>
+          <div class="flexContainer">
+            <a class="increaseMoney">add money</a>
+            <a class="decreaseMoney">subtract money</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="002" class="cardListBox">
+        <div id="cardTitle1" class="cardTitle">
+          <h1 id="cardBrand1" class=""></h1>
+          <h2 id="cardNumber1" class=""></h2>
+          <span id="moneyLeft1" class="moneyLeft"></span>
+        </div>
+        <div class="details">
+          <ul id="innerListCard1"></ul>
+          <div class="flexContainer">
+            <a class="increaseMoney">add money</a>
+            <a class="decreaseMoney">subtract money</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="cash" class="cardListBox">
+        <div id="cashTitle" class="cardTitle">
+          <h1 id="cashHeading1" class=""></h1>
+          <h2 id="cashHeading2" class=""></h2>
+          <span id="moneyLeftCash" class="moneyLeft"></span>
+        </div>
+        <div class="details">
+          <div class="flexContainer">
+            <a class="increaseMoney">add money</a>
+            <a class="decreaseMoney">subtract money</a>
+          </div>
+        </div>
+      </div>
+
+      <h1>Last Modified</h1>
+      <div class="last-modified">
+      </div>
+
+      <div id="btnLogs" class="">See Logs</div>
+      <div class="list-of-logs" style="display:none;">
+        <div class="">Date</div>
+        <div class="">Time</div>
+        <div class="">Store</div>
+        <div class="">Details</div>
+        <!-- <div class="">Wed Jun 13 2018</div>
+        <div class="">20:18 GMT +3.00</div> -->
+      </div>
+    </ul>
+    <!-- Value -->
+    <pre id="object"></pre>
+
+
+
+    <script src="myApp.js"></script>
+  </body>
+</html>

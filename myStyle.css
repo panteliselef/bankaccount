@@ -1,0 +1,175 @@
+body{
+  font-family: 'Lato', sans-serif;
+  font-family: 'Google Sans';
+  top: 0;
+  left: 0;
+  margin: 0;
+}
+
+header {
+  padding: 20px 50px;
+  width: calc(100% - 100px);
+  background-color: rgb(33, 150, 243);
+  color: #fff;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+h1 {
+  color: #999;
+  font-size: 1.5em;
+  line-height: 25px;
+  margin: 0;
+  font-weight: normal;
+  text-transform: capitalize;
+}
+h2 {
+  text-transform: uppercase;
+  margin: 10px 0;
+  display: inline;
+  width: auto;
+  font-size: 1em;
+}
+ul.cardList {
+  /*display: none;*/
+  margin: 20px auto;
+  max-width: 500px;
+  width: 100%;
+}
+.cardList div.cardListBox {
+  border-bottom: 2px solid #999;
+  padding: 10px;
+  /*box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3)*/
+}
+div.cardTitle {
+  padding: 0;
+  border: none;
+}
+.details {
+  display: none;
+}
+span.moneyLeft {
+  float: right;
+}
+
+.flexContainer {
+  display: flex;
+}
+a {
+  text-align: center;
+  padding: 20px 10px;
+  min-width: 100px;
+  flex-grow: 1;
+}
+
+
+
+
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.3s;
+    animation-name: fadeIn;
+    animation-duration: 0.3s
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0 20px 20px 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 200px;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.3s;
+    animation-name: slideIn;
+    animation-duration: 0.3s
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top:0;
+    right: 10px;
+    color: #aaaaaa;
+    font-size: 28px;
+    float: right;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal #moneyInput {
+  text-align: center;
+  margin-top: 20px;
+  max-width: 190px;
+  outline: none;
+  padding: 5px 0;
+  font-size: 1.4em;
+  display: block;
+  appearance: none;
+  border: none;
+  border-bottom: 2px solid #333;
+}
+/* Add Animation */
+@-webkit-keyframes slideIn {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+.last-modified {
+  display: grid;
+}
+
+#btnLogs {
+  text-align: center;
+  padding: 10px 20px;
+  color: #fff;
+  margin: 20px 0;
+  text-transform: uppercase;
+  border-radius: 3px;
+  max-width: 100px;
+  background-color: rgb(33, 150, 243);
+}
+
+.list-of-logs {
+  display: grid;
+  grid-template-columns: repeat(4,4fr);
+  grid-auto-rows: auto;
+
+}

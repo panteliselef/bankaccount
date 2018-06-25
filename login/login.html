@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="https://cdn.firebase.com/libs/firebaseui/2.4.1/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.4.1/firebaseui.css" />
+    <script src="../jquery.js"></script>
+    <title></title>
+    <style media="screen">
+      .container {
+        font-family: 'Roboto', sans-serif;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 25%;
+        max-width: 300px;
+        transform: translateY(-10%);
+      }
+      input {
+        display: block;
+        width: 100%;
+        border: none;
+        padding: 10px 0;
+        border-bottom: 1px solid #999;
+        font-size: 1.3em;
+      }
+      .button {
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+        appearance:none;
+        border-radius: 2px;
+        padding: 10px;
+        border: none;
+        font-size: 1em;
+        font-weight: bold;
+      }
+      .btn-action {
+        background-color: #329DEF;
+        color: #fff;
+      }
+      .btn-secondary {
+        background-color: #fff;
+        color: #329DEF;
+      }
+      .hide {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <input id="txtEmail" type="email" placeholder="Email">
+
+      <input id="txtPassword" type="password" placeholder="Password">
+
+      <input id="txtUsername" type="text" class="hide" placeholder="Username">
+
+      <button id="btnLogin" type="button" class="button btn-action">Log in</button>
+
+      <button id="btnSignUp" type="button" class="button btn-secondary">Sign Up</button>
+
+      <button id="btnLogout" type="button" class="button btn-action hide">Log out</button>
+
+      <button id="btnSetUsername" type="button" class="button btn-action hide">Set Username</button>
+
+    </div>
+    <script src="login.js"></script>
+  </body>
+</html>
